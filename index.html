@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo1.jpeg" />
+    <title>Sign in || Sign up Artverse</title>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <div class="row"><img src="img/logo.jpeg" width="120" atl="" /></div>
+          <h1>Create Account</h1>
+          <div class="p">Let’s get started to find your favorite art</div>
+          <div class="social-container">
+            <button class="Signin-google">Login with Google</button>
+          </div>
+          <span>________________or________________</span>
+          <div class="sigup-form">
+            <input type="text" placeholder="Enter your name here" />
+            <label></label>
+          </div>
+          <div class="sigup-form">
+            <input type="email" placeholder="Put your email here" name="email" />
+            <label></label>
+          </div>
+          <div class="sigup-form">
+            <input type="password" placeholder="Put your password here" />
+            <label></label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+            <label class="form-check-label" for="flexCheckChecked">I agree to all term, privacy policy and fees</label>
+          </div>
+          <button>Created account</button>
+          <div class="p-caption">Already have an account? <a href="#">Sign In</a></div>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <div class="row"><img src="img/logo.jpeg" width="120" atl="" /></div>
+          <h1>Welcome to Artverse</h1>
+          <div class="p">Let’s get started to find your favorite art</div>
+          <div class="social-container">
+            <button class="Signin-google">Login with Google</button>
+          </div>
+          <span>________________or________________</span>
+          <div class="sigin-form">
+            <input type="email" placeholder="Put your email here" name="email" />
+            <label></label>
+          </div>
+          <div class="sigin-form">
+            <input type="password" placeholder="Put your password here" />
+            <label></label>
+          </div>
+          <div class="form-check">
+            <a href="#" class="text-decoration-none">Forgot password?</a>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+            <label class="form-check-label" for="flexCheckChecked">Remember me</label>
+          </div>
+          <button>
+            <a href="home.html" class="btn btn-primary" role="button" data-bs-toggle="button">Login with account</a>
+          </button>
+          <div class="p-caption">Don’t have an account? <a href="#">Sign Up</a></div>
+        </form>
+      </div>
+      <div class="overlay-container" id="overlayCon">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <img src="img/home18.jpg" class="img-fluid" alt="..." />
+            <button>Sign Up</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <img src="img/home18.jpg" class="img-fluid" alt="..." />
+            <button>Sign In</button>
+          </div>
+        </div>
+        <button id="overlayBtn"></button>
+        <button id="overlayBtn2">Log in</button>
+      </div>
+    </div>
+
+    <!-- js code -->
+    <script>
+      const container = document.getElementById('container');
+      const overlayCon = document.getElementById('overlayCon');
+      const overlayBtn = document.getElementById('overlayBtn');
+      const overlayBtn2 = document.getElementById('overlayBtn2');
+
+      overlayBtn.addEventListener('click', () => {
+        container.classList.toggle('right-panel-active');
+      });
+
+      overlayBtn2.addEventListener('click', () => {
+        container.classList.toggle('right-panel-active');
+      });
+    </script>
+  </body>
+</html>
